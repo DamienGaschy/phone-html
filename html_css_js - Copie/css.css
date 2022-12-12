@@ -1,0 +1,465 @@
+/*Classe*/
+
+/* Background */
+body 
+		{
+		    background-color:rgb(58, 109, 175);
+		}
+
+
+.phone
+        {
+            position: relative;
+            height: 500px; width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            margin-bottom: auto;
+            perspective: 700px;
+        }
+
+                .gauche
+                        {
+                            height: 100%; width: 100%;
+                            position: absolute; top: 0px;
+                        }
+
+                                .face1
+                                        {
+                                            background-color:#0c1026;
+                                            height: 100%;  width: 50%; 
+                                            border-radius: 25px 0% 0% 25px;
+                                            position: absolute; left: 0px;
+                                        }
+                                                .screenLeft
+                                                        {   
+                                                            background: url(fondg.jpg);
+                                                            position:absolute;
+                                                            margin-top: 1%;
+                                                            height: 99.2%; width: 99%;
+                                                            left: 1%;
+                                                            border-radius: 25px 0% 0% 25px;
+                                                            opacity: 0;
+                                                            transition: opacity 3s;
+                                                        }
+
+
+                                                                .heure
+                                                                        {
+                                                                            background: url(heure.png);
+                                                                            position:absolute;
+                                                                            height:  10% ; width: 25%;
+                                                                            background-size: 60px 48px;
+                                                                            left : 1%;
+                                                                            top : 0.8%;
+                                                                        }
+
+                                                                .insta
+                                                                        {
+                                                                            background: url(insta.png);
+                                                                            background-size: 100% 100%;
+                                                                            position: absolute;
+                                                                            left: 13%;
+                                                                            bottom: 20%;
+                                                                        }
+
+                                                                .legends
+                                                                        {
+                                                                            background: url(legends.png);
+                                                                            background-size: 100% 100%;
+                                                                            position: absolute;
+                                                                            left: 50%;
+                                                                            bottom: 20%;
+                                                                        }
+
+                                                                .appel
+                                                                        {
+                                                                            background: url(appel.png);
+                                                                            background-size: 100% 100%;
+                                                                            position: absolute;
+                                                                            left: 13%;
+                                                                            bottom: 5%;
+                                                                        }
+
+                                                                .message
+                                                                        {
+                                                                            background: url(message.png);
+                                                                            background-size: 100% 100%;
+                                                                            position: absolute;
+                                                                            left: 50%;
+                                                                            bottom: 5%;
+                                                                        }
+                                        
+                .droite
+                        {
+                            height: 500px; width: 400px;
+                            position: absolute; top: 0px;
+                            transform-style: preserve-3d;
+                        }
+                                .face2
+                                        {
+                                            background-color:#0c1026;
+                                            height: 100%;  width: 50%;
+                                            border-radius: 0% 25px 25px 0%;
+                                            position: absolute; right: 0px;
+                                        }
+                                                .screenRight
+                                                        {
+                                                            background: url(fondd.jpg);
+                                                            position:absolute; 
+                                                            margin-top: 1%;
+                                                            height: 99.2%; width: 99%;
+                                                            right: 1%;
+                                                            border-radius: 0% 25px 25px 0%;
+                                                            opacity: 0;
+                                                            transition: opacity 3s;
+                                                        }
+
+                                                                .batterie
+                                                                        {
+                                                                            background: url(batterie.png);
+                                                                            position:absolute;
+                                                                            height:  10% ; width: 25%;
+                                                                            background-size: 60px 48px;
+                                                                            right : 1%;
+                                                                            top : 0.5%;
+                                                                        }
+
+                                                                .pourcent
+                                                                        {
+                                                                            background: url(pourcent.png);
+                                                                            position:absolute;
+                                                                            height:  10% ; width: 25%;
+                                                                            background-size: 60px 48px;
+                                                                            right : 13%;
+                                                                            top : 0.8%;
+                                                                        }
+
+                                                                .reseau
+                                                                        {
+                                                                            background: url(réseau.png);
+                                                                            position:absolute;
+                                                                            height:  10% ; width: 25%;
+                                                                            background-size: 60px 48px;
+                                                                            right : 27%;
+                                                                            top : 0.8%;
+                                                                        }
+
+                                                                .wifi
+                                                                        {
+                                                                            background: url(wifi.png);
+                                                                            position:absolute;
+                                                                            height:  10% ; width: 25%;
+                                                                            background-size: 60px 48px;
+                                                                            right : 40%;
+                                                                            top : 0.8%;
+                                                                        }
+                                                                    
+                                                                .horloge
+                                                                        {
+                                                                            background: url(horloge.png);
+                                                                            position:absolute;
+                                                                            height:  40% ; width: 100%;
+                                                                            background-size: 200px 200px;
+                                                                            right : 1%;
+                                                                            top : 15%;
+                                                                        }
+
+                                                                .needlebox1
+                                                                        {
+                                                                            height:  1% ; width: 65%;
+                                                                            position: absolute;
+                                                                            right : 17%;
+                                                                            top : 34.8%;
+                                                                            animation: pneedle 3600s linear infinite;
+                                                                        }
+                                                                
+                                                                                .pneedle
+                                                                                        {
+                                                                                            background-color:#000000;
+                                                                                            position:absolute;
+                                                                                            height:  100% ; width: 60%;
+                                                                                            right: 0%;
+                                                                                        }
+                                                                        
+                                                                .needlebox2
+                                                                        {
+                                                                            height:  1% ; width: 90%;
+                                                                            position: absolute;
+                                                                            right : 7%;
+                                                                            top : 34.8%;
+                                                                            animation: gneedle 300s linear infinite;
+                                                                        }                     
+
+                                                                                .gneedle
+                                                                                        {
+                                                                                            background-color:#000000;
+                                                                                            position:absolute;
+                                                                                            height:  100% ; width: 60%; 
+                                                                                        }
+
+                                                                .tinder
+                                                                        {
+                                                                            background: url(tinder.png);
+                                                                            background-size: 100% 100%;
+                                                                            position: absolute;
+                                                                            right: 13%;
+                                                                            bottom: 20%;
+                                                                            
+                                                                        }  
+                                                                        
+                                                                .photo
+                                                                        {
+                                                                            background: url(photo.png);
+                                                                            background-size: 100% 100%;
+                                                                            position: absolute;
+                                                                            right: 13%;
+                                                                            bottom: 5%;
+                                                                            
+                                                                        }
+
+                                                                .galerie
+                                                                        {
+                                                                            background: url(galerie.png);
+                                                                            background-size: 100% 100%;
+                                                                            position: absolute;
+                                                                            right: 50%;
+                                                                            bottom: 5%;
+                                                                            
+                                                                        }
+                                                                        
+
+                                .face2bis
+                                        {
+                                            background-color:#0c1026;
+                                            height: 100%;  width: 50%;
+                                            border-radius: 0% 25px 25px 0%;
+                                            position: absolute; right: 0px;
+                                            transform: translateZ(-11px);
+                                        }
+
+                                                .screenRight2
+                                                        {
+                                                            background: url(fonddd2.jpg);
+                                                            position:absolute; 
+                                                            margin-top: 1%;
+                                                            height: 99.2%; width: 99%;
+                                                            right: 1%;
+                                                            border-radius: 0% 25px 25px 0%;
+                                                        }
+
+                                                                .batterie2
+                                                                        {
+                                                                            background: url(batterie.png);
+                                                                            position:absolute;
+                                                                            height:  10% ; width: 25%;
+                                                                            background-size: 60px 48px;
+                                                                            left : 0.5%;
+                                                                            top : 0.5%;
+                                                                        }
+
+                                                                .pourcent2
+                                                                        {
+                                                                            background: url(pourcent2.png);
+                                                                            position:absolute;
+                                                                            height:  10% ; width: 25%;
+                                                                            background-size: 60px 48px;
+                                                                            left : 13%;
+                                                                            top : 0.8%;
+                                                                        }
+
+                                                                .reseau2
+                                                                        {
+                                                                            background: url(réseau2.png);
+                                                                            position:absolute;
+                                                                            height:  10% ; width: 25%;
+                                                                            background-size: 60px 48px;
+                                                                            left : 27%;
+                                                                            top : 0.8%;
+                                                                        }
+
+                                                                .wifi2
+                                                                        {
+                                                                            background: url(wifi2.png);
+                                                                            position:absolute;
+                                                                            height:  10% ; width: 25%;
+                                                                            background-size: 60px 48px;
+                                                                            left : 40%;
+                                                                            top : 0.8%;
+                                                                        }
+                                                                
+                                                                .appel2
+                                                                        {
+                                                                            background: url(appel2.png);
+                                                                            background-size: 100% 100%;
+                                                                            right: 1%;
+                                                                            bottom: 1%;
+                                                                        }
+
+                                                                .photo2
+                                                                        {
+                                                                            background: url(photo2.png);
+                                                                            background-size: 100% 100%;
+                                                                            left: 1%;
+                                                                            bottom: 1%;
+                                                                        }                                 
+
+                                .trancheD
+                                        {
+                                            background: linear-gradient(57deg,
+                                            rgba(12,16,38,1) 0%,
+                                            rgba(18,24,57,1) 36%,
+                                            rgba(26,34,82,1) 41%,
+                                                rgba(15,20,47,1) 47%,
+                                                rgba(12,16,38,1) 95%);
+                                            height: 90%;  width: 3%;
+                                            position: absolute; right: 0px;
+                                            transform: rotateY(90deg) translateX(6px) translateZ(5px) translateY(25px);
+                                        }                        
+
+                                .coinhaut1
+                                        {
+                                            background-color: #0c1026;
+                                            height: 2%;  width: 3%;
+                                            position: absolute; right: 0px;
+                                            transform: rotateY(90deg) translateX(6px) translateZ(4px) translateY(16px) rotateX(10deg);
+                                        }
+                                .coinhaut2
+                                        {
+                                            background-color: #0c1026;
+                                            height: 2%;  width: 3%;
+                                            position: absolute; right: 0px;
+                                            transform: rotateY(90deg) translateX(6px) translateZ(1px) translateY(7px) rotateX(30deg);
+                                        }
+                                .coinhaut3
+                                        {
+                                            background-color: #0c1026;
+                                            height: 2%;  width: 3%;
+                                            position: absolute; right: 0px;
+                                            transform: rotateY(90deg) translateX(6px) translateZ(-4px) translateY(1px) rotateX(50deg);
+                                        } 
+                                .coinbas1
+                                        {
+                                            background-color: #0c1026;
+                                            height: 2%;  width: 3%;
+                                            position: absolute; right: 0px;
+                                            transform: rotateY(90deg) translateX(6px) translateZ(4px) translateY(474px) rotateX(-10deg);
+                                        }
+                                .coinbas2
+                                        {
+                                            background-color: #0c1026;
+                                            height: 2%;  width: 3%;
+                                            position: absolute; right: 0px;
+                                            transform: rotateY(90deg) translateX(6px) translateZ(1px) translateY(483px) rotateX(-30deg);
+                                        }
+                                .coinbas3
+                                        {
+                                            background-color: #0c1026;
+                                            height: 2%;  width: 3%;
+                                            position: absolute; right: 0px;
+                                            transform: rotateY(90deg) translateX(6px) translateZ(-4px) translateY(489px) rotateX(-50deg);
+                                        }
+
+/*ouvrir téléphone*/
+input[type="checkbox"]:checked ~ .phone > .droite 
+        {
+            animation: return 2s linear;
+            animation-fill-mode: forwards; 
+        }
+
+/*fermer téléphone*/
+input[type="checkbox"]:not(:checked) ~ .phone > .droite 
+        {
+            animation: turn 2s linear;
+            animation-fill-mode: forwards; 
+        }
+
+/*monter icon en priorité*/
+input[type="checkbox"]:checked ~ .phone > .gauche > .face1 > .screenLeft > .icon
+        {
+            z-index: 100;
+        }
+
+/*écran s'assombrit*/
+input[type="checkbox"]:checked ~ .phone .screenLeft
+        {
+            opacity: 1;
+        }
+input[type="checkbox"]:checked ~ .phone .screenRight
+        {
+            opacity: 1;
+        }
+
+/*rendre checkbox adapter taille écran*/       
+.bouton
+        {
+            height: 5vw;  width: 5vw;
+        }
+
+/*faire bouger icône quand souris passe dessus*/
+.icon
+        {
+            height: 10%;
+            width: 25%;
+            position: absolute;
+            transition: all .1s ease-in-out;
+        }
+
+.icon:hover 
+        {
+            height: 12%;
+            width: 30%;
+        }
+
+@keyframes turn
+        {
+            0% 
+            {
+                transform:  rotateY(0deg);
+            }
+
+            100%
+            {
+                transform:  rotateY(-180deg);
+            }
+        }
+
+@keyframes return
+        {
+            0% 
+            {
+                transform:  rotateY(-180deg);
+            }
+
+            100%
+            {
+                transform:  rotateY(0deg);
+            }
+        } 
+
+@keyframes pneedle
+        {
+            0% 
+            {
+                transform:  rotateZ(0deg);
+            }
+
+            100%
+            {
+                transform:  rotateZ(360deg);
+            }
+        }
+
+@keyframes gneedle
+        {
+            0% 
+            {
+                transform:  rotateZ(90deg);
+            }
+
+            100%
+            {
+                transform:  rotateZ(450deg);
+            }
+        } 
+
